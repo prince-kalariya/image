@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image with paragraph</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .text {
+            flex-grow: 1;
+            padding-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a target="_blank" href="https://picsum.photos/seed/picsum/200/300">
+            <img src="https://picsum.photos/seed/picsum/200/300" alt="Description of the Image" class="Image">
+        </a>
+        <p class="text">
+            Get the same random image every time based on a seed, by adding /seed/{seed} to the start of the url.
+        </p>
+    </div>
+    <br/>
+    <div class="container">
+        <a target="_blank" href="https://picsum.photos/200/300?grayscale">
+            <img src="https://picsum.photos/200/300?grayscale" alt="Description of the image">
+        </a>
+        <p class="text">
+            Get a grayscale image by appending ?grayscale to the end of the url.
+        </p>
+    </div>
+    <br/>
+    <div class="container">
+        <a target="_blank" href="https://picsum.photos/id/237/200/300">
+            <img src="https://picsum.photos/id/237/200/300" alt="Description of the image" class="image">
+        </a>
+        <p class="text">
+            Get a specific image by adding /id/{image} to the start of the url.
+        </p>
+    </div>
+</body>
+</html>
